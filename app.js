@@ -52,7 +52,8 @@ function startTimer(duration, display){
 
         if (--timer < 0) {
             timer = duration;
-        } else {
+        } else if (--timer === 0) {
+            clearInterval(timer);
             return `TIME IS UP`;
         }
         
@@ -66,3 +67,15 @@ window.onload = function () {
 };
 
 
+
+
+
+// let i = 5;
+// const countdown = setInterval(() => {
+//    if (i > 0 ) {
+//        console.log(i);
+//    } else {
+//        clearInterval(countdown);
+//    }
+//    i--;
+// }, 1000);
