@@ -25,11 +25,11 @@ setTimeout(() => {
 }, 2000);
 
 //3a)
-// let time = 0;
-// const seconds = setInterval(() => {
-//     console.log(time);
-//     time++
-// }, 1000);
+let time = 0;
+const seconds = setInterval(() => {
+    console.log(time);
+    time++
+}, 1000);
 
 //3b)
 const stop = document.querySelector(`button`);
